@@ -2,6 +2,13 @@
 <br />
 <h4>Welcome to Server Manager 4.0</h4>
 <p>Manage your Servers and Users.</p>
+<p>User LogIn Status is {{ loginStatus }}</p>
 <button class="btn btn-primary" (click)="onLoadServers(1)">
   Load Server 1
 </button>
+<br />
+<br />
+<div class="btn-group" role="group" aria-label="Basic mixed styles example">
+  <button class="btn btn-secondary" (click)="onLogin()">Login</button>
+  <button class="btn btn-secondary" (click)="onLogout()">Logout</button>
+</div>
