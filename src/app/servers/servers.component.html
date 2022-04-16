@@ -1,6 +1,6 @@
+<!-- <br />
 <br />
-<br />
-<button class="btn btn-primary" (click)="onReload()">Reload Page</button>
+<button class="btn btn-primary" (click)="onReload()">Reload Page</button> -->
 <br />
 <br />
 <div class="row">
@@ -8,7 +8,7 @@
     <div class="list-group">
       <a
         [routerLink]="['/servers', server.id]"
-        [queryParams]="{ allowEdit: '1' }"
+        [queryParams]="{ allowEdit: server.id === 3 ? '1' : '0' }"
         fragment="loading"
         href="#"
         class="list-group-item"
